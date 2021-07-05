@@ -39,6 +39,7 @@
 
 <script>
     const input = document.querySelector('#cityName');
+    console.log(input);
     const searchBtn = document.querySelector('#searchBtn');
     const name = document.querySelector('#city-name');
     const temp = document.querySelector('#temperature');
@@ -50,7 +51,7 @@
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value == 0 ? Dhaka : input.value }&appid=a8f9dba33678a510cbc62a8de6971272`)
 .then(res => res.json())
 .then(data => {
-
+console.log(data);
 
     const displayCityname = data['name'];
 name.innerHTML = displayCityname;
