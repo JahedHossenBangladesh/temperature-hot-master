@@ -48,7 +48,7 @@
 
    searchBtn.addEventListener('click',function(){
    
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value == 0 ? Dhaka : input.value }&appid=a8f9dba33678a510cbc62a8de6971272`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value }&appid=a8f9dba33678a510cbc62a8de6971272`)
 .then(res => res.json())
 .then(data => {
 console.log(data);
